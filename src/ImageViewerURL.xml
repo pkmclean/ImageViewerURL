@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="deloitte.imageviewerurl.ImageViewerURL" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Image Viewer URL</name>
+    <description>My widget description</description>
+     <icon/>
+     <properties>
+        <property key="url" type="expression" required="true">
+            <caption>Image URL</caption>
+            <category>General</category>
+            <description></description>
+            <returnType type="String" />
+        </property>
+        <property key="authToken" type="expression" required="false">
+            <caption>Auth token</caption>
+            <category>General</category>
+            <description>(Optional) provide an Authorization header value to be set in the request.</description>
+            <returnType type="String" />
+        </property>
+        <property key="zoom" type="expression" required="true">
+            <caption>Zoom</caption>
+            <category>General</category>
+            <description>Allows you to zoom in the photo</description>
+            <returnType type="Boolean" />
+        </property>
+    </properties>
+</widget>
